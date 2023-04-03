@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Flexbox_Demo</title>
+        <style>
+            body{padding: 2em;}
+
+            .headerContainer{
+                display: flex;
+                flex-flow:column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .footerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .mainContainer{
+                display:flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+            h1{
+                text-align: center;
+            }
+            
+           .mainContentItem{
+            text-align: left;
+            
+            background: deepskyblue;
+           }
+
+           .firstArticle{
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+           }
+
+           .secondArticle{
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+           }
+
+           .ThirdArticle{
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+           }
+
+           .sideBarLeftItem{
+            background: gold;
+           }
+           
+           .sideBarRightItem{
+            background: hotpink;
+           }
+
+        
+
+           .sideBarItem {flex: 1 0 0; border:0px solid green}
+           .mainContentItem{flex: 3 0px;}
+
+           .sideBarLeftItem{
+            order: 1;
+           }
+
+           .mainContentItem{order: 2;}
+           
+           .sideBarRightItem{order: 3 ;}
+           
+
+
+        </style>
+    </head>
+    <body>
+        <header class="headerContainer"><h1>Header - Sample Flexbox Exmple<br>Pranav Waghmare<br></h1></header>
+        <div class="mainContainer">
+            <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left side Bar</p></div> </sideBar>
+
+                 <section class="mainContentItem">
+                    <article class="firstArticle">
+                     <h2>First Article</h2>
+                        <p> is an HTML5 tag while sidebar is a user interface element that typically appears as a column to the left or right side of the main content.</p>
+                    </article>
+                    <article class="secondArticle">
+                        <h2>Second Article</h2>
+                           <p> is an HTML5 tag while sidebar is a user interface element that typically appears as a column to the left or right side of the main content.</p>
+                       </article>
+                       <article class="ThirdArticle">
+                        <h2>Third Article</h2>
+                           <p> is an HTML5 tag while sidebar is a user interface element that typically appears as a column to the left or right side of the main content.</p>
+                       </article>
+                      
+                </section>
+                        
+             <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right side Bar</p></div>  </sideBar>
+
+        </div>
+        <footer class="footerContainer"><h1>Footer</h1></footer>
+        
+       
+        
+         
+    </body>
+
+</html>
