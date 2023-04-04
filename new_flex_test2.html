@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Flex Test2</title>
+        <style>
+            body{
+                background-color: rgb(170, 129, 129);
+                padding: 50px 150px 0px 150px;
+               
+              
+            }
+            .header{
+                display: flex;
+                flex-flow: row wrap;
+                background-color: rgba(236, 118, 252, 0.733);
+                padding: 10px 0px 0px 80px;
+               margin: 5px;
+                
+            }
+
+            .header h2
+            {
+                font-size: 20px;
+                font-family: Bahnschrift;
+                
+                word-spacing: 100px;
+                
+            }
+            .header h2 a {text-decoration: none;color;color: navy;}
+
+            .header .menu
+            {
+                padding: 10px 0px 0px 160px;
+            }
+
+            .header .menu input{
+                padding: 5px 30px 5px 30px;
+            }
+
+            .header .menu button{
+                padding: 5px 30px 5px 30px;
+                background-color:navy;
+                color: white;
+            }
+
+           
+
+            
+
+            
+            .mainContainer{
+                display: flex;
+                flex-flow: row wrap; 
+            }
+
+            .mainContainer h2{
+               text-align: center;
+               font-family: 'Bauhaus 93';
+               font-style: italic;
+               font-size: xx-large;
+            }
+
+            .mainContainer h3
+            {  font-style: italic; 
+               font-weight: bolder; 
+               font-size: 25px;
+            }
+
+            .mainContainerItem{
+               
+                padding: 5px 30px 5px 30px;
+                margin: 5px;
+                background: white;
+            }
+           
+            
+
+
+            .artical {
+                padding: 10px;
+                margin: 10px;
+                background: white;
+                height: 200px;
+            }
+
+            
+
+
+            .rightSideBar { 
+                padding: 5px 0px 0px 40px;
+                margin: 5px;
+                background-color: rgba(236, 118, 252, 0.733);
+                text-align: left;
+                word-spacing: 1px; 
+                font-size: 18px;
+            }
+            .rightSideBar .center h2{
+                font-family: Stencil;
+                font-style: italic;
+                text-align:center;
+                font-size: xx-large;
+                padding-right: 30px ;
+
+            }
+            .rightSideBar .center li{
+                font-family: Bahnschrift;
+                text-align: left;
+                font-size: large;
+                padding-right: 30px ;
+                
+
+            }
+            
+            
+            .sideBar
+            { 
+                flex: 1 0;
+            }
+            .mainContainerItem{ flex: 4 0; }
+            .footer{
+                padding: 1px 0px 1px 15px ;
+                margin: 5px;
+                background-color: white;
+                font-size: 20px;
+            }
+
+        </style>
+    </head>
+    <body class="body">
+        <header class="header"> 
+        <h2>
+            <a  href="#">HOME</a>
+            
+            <a  href="#">OUR_TEAM</a>
+            
+            <a  href="#">PROJECT</a>
+            
+            <a  href="#">CONTACT</a>
+            
+        </h2>
+            <div class="menu ">
+                <input id="search" type="search" name="search" placeholder="Search">
+                <button>Go!</button>
+            </div>
+        </header>
+        
+        <div class="mainContainer">
+            <section class="mainContainerItem">
+                <article>
+                    <h2>Artical Heading</h2>
+                    <p>
+                        News is information about current events. This may be provided through many different media: word of mouth, 
+                        printing, postal systems, broadcasting, electronic communication, or through the testimony of observers and 
+                        witnesses to events. News is sometimes called "hard news" to differentiate it from soft media.
+                    </p>
+                </article>
+                <article>
+                    <h3>Subsection</h3>
+                    <p>
+                        News is information about current events. This may be provided through many different media: word of mouth, 
+                        printing, postal systems, broadcasting, electronic communication, or through the testimony of observers and 
+                        witnesses to events. News is sometimes called "hard news" to differentiate it from soft media.
+                    </p>
+                </article>
+                <article>
+                    <h3>Another Subsection</h3>
+                    <p>
+                        News is information about current events. This may be provided through many different media: word of mouth, 
+                        printing, postal systems, broadcasting, electronic communication, or through the testimony of observers and 
+                        witnesses to events. News is sometimes called "hard news" to differentiate it from soft media.
+                        <br><span></span><br>
+                             News is information about current events. This may be provided through many different media: word of mouth, 
+                        printing, postal systems, broadcasting, electronic communication, or through the testimony of observers and 
+                        witnesses to events. News is sometimes called "hard news" to differentiate it from soft media.
+                    </p>
+                </article>
+            </section>
+            <sideBar class="sideBar rightSideBar">
+                <div class="center">
+                    <h2>Related</h2>
+                    <li><a href="https://www.pexels.com/photo/photo-of-seashore-during-daytime-1450360/">Oh I do like to be beside the seaside</a></li>
+                    
+                    <li><a href="https://www.pexels.com/photo/photo-of-seashore-during-daytime-1450360/">Oh I do Like to be beside the sea</a></li>
+                    <li><a href="https://www.pexels.com/photo/bridge-over-river-in-city-258117/">Althrough in the North of England</a></li>
+                    <li><a href="https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/02exKf_cRx1gpLEJfmZ5KCkX26A=/1660x934/smart/filters:no_upscale()/arc-anglerfish-arc2-prod-dmn.s3.amazonaws.com/public/7AKFGNWH6APQNAZRWNIXTX2LTU.gif">It never Stop raining</a></li>
+                </div>
+            </sideBar>
+        </div>
+        <div class="footer">
+            <h6 class="copyrigte">©Copyright 2023 by Pranav A Waghmare. All rights reserved</h6>
+        </div>   
+        
+        
+    </body>
+</html>
